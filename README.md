@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=A855F7&height=120&section=header&text=Celal%20Mert%20Ta%C5%9Fk%C4%B1n&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&width=500&height=24&lines=Software+Engineering+Student;Java+%7C+Python+%7C+C%2B%2B+%7C+TypeScript;%C4%B0zmir+University+of+Economics;Building+things+that+matter" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&width=500&height=24&lines=Software+Engineering+Student;Full+Stack+%7C+Mobile+%7C+Desktop;Java+%7C+C%23+%7C+Dart+%7C+TypeScript+%7C+Python;%C4%B0zmir+University+of+Economics" alt="Typing SVG" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/celal-mert-taskin/)
 [![GitHub](https://img.shields.io/badge/GitHub-Xslead-181717?style=flat&logo=github&logoColor=white)](https://github.com/Xslead)
@@ -19,7 +19,7 @@ Name:     Celal Mert Taşkın
 Role:     Software Engineering Student
 School:   İzmir University of Economics
 Location: İzmir, Turkey
-Focus:    Full Stack Development · Systems Programming · Web Applications
+Focus:    Full Stack · Mobile · Desktop · Web Applications
 ```
 
 ---
@@ -29,19 +29,31 @@ Focus:    Full Stack Development · Systems Programming · Web Applications
 <div align="center">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=java,python,cpp,typescript,javascript,html,css&theme=dark" alt="Languages" />
+  <img src="https://skillicons.dev/icons?i=java,cs,dart,python,cpp,typescript,javascript,html,css,swift,kotlin,ruby&theme=dark" alt="Languages" />
 </a>
 
 </div>
 
 ---
 
-### Tools & Frameworks
+### Frameworks & Platforms
 
 <div align="center">
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=vite,idea,git,github,vscode&theme=dark" alt="Tools" />
+  <img src="https://skillicons.dev/icons?i=flutter,react,dotnet,vite,docker&theme=dark" alt="Frameworks" />
+</a>
+
+</div>
+
+---
+
+### Tools
+
+<div align="center">
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=idea,vscode,git,github&theme=dark" alt="Tools" />
 </a>
 
 </div>
