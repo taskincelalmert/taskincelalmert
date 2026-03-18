@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=A855F7&height=120&section=header&text=Celal%20Mert&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=A855F7&height=120&section=header&text=Celal%20Mert%20Ta%C5%9Fk%C4%B1n&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&width=500&height=24&lines=Software+Engineering+Student;Java+%7C+Python+%7C+C%2B%2B+%7C+TypeScript;%C4%B0zmir+University+of+Economics;Building+things+that+matter" alt="Typing SVG" />
 
@@ -15,7 +15,7 @@
 ### About Me
 
 ```yaml
-Name:     Celal Mert
+Name:     Celal Mert Taşkın
 Role:     Software Engineering Student
 School:   İzmir University of Economics
 Location: İzmir, Turkey
