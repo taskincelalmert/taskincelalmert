@@ -68,10 +68,6 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 |---------|-------------|------|
 | **ChefSpecials** | Mobile app for restaurant specials | Flutter, Dart, Swift, Kotlin |
 | **DetaApartProject** | Full stack apartment management system | C#, .NET, TypeScript, Docker |
-| [**Kredi-Hesaplama**](https://github.com/Xslead/Kredi-Hesaplama) | Credit/loan calculator web application | TypeScript, Vite |
-| [**BattleShip**](https://github.com/Xslead/BattleShip) | Classic battleship game implementation | Java |
-| **CGSD** | Team project for SE 116 course | Java |
-| [**SE226**](https://github.com/Xslead/SE226) | University coursework & lab assignments | Python, C++ |
 
 </div>
 
@@ -85,12 +81,12 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 %%{init: {'theme': 'dark'}}%%
 pie showData
     title Language Distribution
-    "TypeScript" : 40.3
-    "Dart" : 30.7
-    "C#" : 24.2
-    "Java" : 2.1
-    "C++" : 0.9
-    "Python" : 0.5
+    "Dart" : 38.5
+    "TypeScript" : 31.4
+    "C#" : 24.6
+    "Python" : 3.2
+    "JavaScript" : 1.3
+    "Java" : 0.5
 ```
 
 </div>
