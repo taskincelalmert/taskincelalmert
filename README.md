@@ -66,8 +66,11 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| [**BattleShip**](https://github.com/Xslead/BattleShip) | Classic battleship game implementation | Java |
+| **ChefSpecials** | Mobile app for restaurant specials | Flutter, Dart, Swift, Kotlin |
+| **DetaApartProject** | Full stack apartment management system | C#, .NET, TypeScript, Docker |
 | [**Kredi-Hesaplama**](https://github.com/Xslead/Kredi-Hesaplama) | Credit/loan calculator web application | TypeScript, Vite |
+| [**BattleShip**](https://github.com/Xslead/BattleShip) | Classic battleship game implementation | Java |
+| **CGSD** | Team project for SE 116 course | Java |
 | [**SE226**](https://github.com/Xslead/SE226) | University coursework & lab assignments | Python, C++ |
 
 </div>
@@ -78,7 +81,14 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Xslead&layout=donut&langs_count=8&hide_border=true&bg_color=0d1117&title_color=A855F7&text_color=c9d1d9" alt="Top Languages" />
+```text
+TypeScript   ████████████████████░░░░░░░░░░░░░░░░░░░░   40.3%
+Dart         ████████████████░░░░░░░░░░░░░░░░░░░░░░░░   30.7%
+C#           ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░   24.2%
+Java         █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    2.1%
+C++          █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    0.9%
+Python       ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░    0.5%
+```
 
 </div>
 
