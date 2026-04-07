@@ -66,6 +66,7 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 | Project | Description | Tech |
 |---------|-------------|------|
+| **Axon-Jira** | Open-source project management tool | Next.js, Firebase, TypeScript |
 | **ChefSpecials** | Mobile app for restaurant specials | Flutter, Dart, Swift, Kotlin |
 | **DetaApartProject** | Full stack apartment management system | C#, .NET, TypeScript, Docker |
 
