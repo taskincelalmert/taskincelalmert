@@ -5,8 +5,8 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&width=500&height=24&lines=Software+Engineering+Student;Full+Stack+%7C+Mobile+%7C+Desktop;Java+%7C+C%23+%7C+Dart+%7C+TypeScript+%7C+Python;%C4%B0zmir+University+of+Economics" alt="Typing SVG" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/celal-mert-taskin/)
-[![GitHub](https://img.shields.io/badge/GitHub-Xslead-181717?style=flat&logo=github&logoColor=white)](https://github.com/Xslead)
-[![Profile Views](https://komarev.com/ghpvc/?username=Xslead&color=A855F7&style=flat&label=Views)](https://github.com/Xslead)
+[![GitHub](https://img.shields.io/badge/GitHub-taskincelalmert-181717?style=flat&logo=github&logoColor=white)](https://github.com/taskincelalmert)
+[![Profile Views](https://komarev.com/ghpvc/?username=taskincelalmert&color=A855F7&style=flat&label=Views)](https://github.com/taskincelalmert)
 
 </div>
 
@@ -77,7 +77,7 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 <div align="center">
 
-<img src="https://github-readme-stats-xsleads-projects.vercel.app/api/top-langs/?username=Xslead&layout=donut&langs_count=8&hide_border=true&bg_color=0d1117&title_color=A855F7&text_color=c9d1d9" alt="Top Languages" />
+<img src="https://github-readme-stats-xsleads-projects.vercel.app/api/top-langs/?username=taskincelalmert&layout=donut&langs_count=8&hide_border=true&bg_color=0d1117&title_color=A855F7&text_color=c9d1d9" alt="Top Languages" />
 
 </div>
 
@@ -87,7 +87,7 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 <div align="center">
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Xslead&hide_border=true&background=0d1117&ring=A855F7&fire=FF6D00&currStreakLabel=A855F7&sideNums=c9d1d9&currStreakNum=c9d1d9&sideLabels=A855F7&dates=6e7681)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=taskincelalmert&hide_border=true&background=0d1117&ring=A855F7&fire=FF6D00&currStreakLabel=A855F7&sideNums=c9d1d9&currStreakNum=c9d1d9&sideLabels=A855F7&dates=6e7681)](https://git.io/streak-stats)
 
 </div>
 
@@ -95,7 +95,7 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Xslead&bg_color=0d1117&color=A855F7&line=A855F7&point=c9d1d9&area=true&area_color=A855F7&hide_border=true" width="95%" alt="Activity Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=taskincelalmert&bg_color=0d1117&color=A855F7&line=A855F7&point=c9d1d9&area=true&area_color=A855F7&hide_border=true" width="95%" alt="Activity Graph" />
 
 </div>
 
