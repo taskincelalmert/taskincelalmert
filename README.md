@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=A855F7&height=120&section=header&text=Celal%20Mert%20Ta%C5%9Fk%C4%B1n&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" />
+<img src="assets/header.svg" width="100%" alt="Celal Mert Taşkın" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&width=500&height=24&lines=Software+Engineering+Student;Full+Stack+%7C+Mobile+%7C+Desktop;Java+%7C+C%23+%7C+Dart+%7C+TypeScript+%7C+Python;%C4%B0zmir+University+of+Economics" alt="Typing SVG" />
 
@@ -66,7 +66,7 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 | Project | Description | Tech |
 |---------|-------------|------|
-| **Axon-Jira** | Open-source project management tool | Next.js, Firebase, TypeScript |
+| **Axon-Jira** | Project management tool | Next.js, Firebase, TypeScript |
 | **ChefSpecials** | Mobile app for restaurant specials | Flutter, Dart, Swift, Kotlin |
 | **DetaApartProject** | Full stack apartment management system | C#, .NET, TypeScript, Docker |
 
@@ -78,7 +78,7 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 <div align="center">
 
-<img src="https://github-readme-stats-xsleads-projects.vercel.app/api/top-langs/?username=taskincelalmert&layout=donut&langs_count=8&hide_border=true&bg_color=0d1117&title_color=A855F7&text_color=c9d1d9" alt="Top Languages" />
+<img src="assets/top-langs.svg" alt="Top Languages" />
 
 </div>
 
@@ -92,19 +92,11 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 </div>
 
-<br>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=taskincelalmert&bg_color=0d1117&color=A855F7&line=A855F7&point=c9d1d9&area=true&area_color=A855F7&hide_border=true" width="95%" alt="Activity Graph" />
-
-</div>
-
 ---
 
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=A855F7&height=80&section=footer" width="100%" />
+  <img src="assets/footer.svg" width="100%" alt="" />
 </div>
 
