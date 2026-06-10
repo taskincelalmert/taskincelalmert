@@ -16,10 +16,16 @@ jobs:
 
       - name: Generate chart
         env:
-          # LANG_STATS_TOKEN (a fine-grained PAT) includes private repos;
-          # without it the default token counts public repos only.
-          GH_TOKEN: ${{ secrets.LANG_STATS_TOKEN || github.token }}
-        run: python3 scripts/generate_lang_chart.py
+          # LANG_STATS_TOKEN must be a fine-grained PAT with read access to
+          # all repos; the default github.token only sees public repos and
+          # would overwrite the chart with incomplete stats.
+          GH_TOKEN: ${{ secrets.LANG_STATS_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "LANG_STATS_TOKEN secret not set; skipping to keep private-repo stats"
+            exit 0
+          fi
+          python3 scripts/generate_lang_chart.py
 
       - name: Commit and push if changed
         run: |
