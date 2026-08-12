@@ -88,7 +88,7 @@ Focus:    Full Stack · Mobile · Desktop · Web Applications
 
 <div align="center">
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=taskincelalmert&hide_border=true&background=0d1117&ring=A855F7&fire=FF6D00&currStreakLabel=A855F7&sideNums=c9d1d9&currStreakNum=c9d1d9&sideLabels=A855F7&dates=6e7681)](https://git.io/streak-stats)
+<img src="assets/activity.svg" alt="Contribution Activity" />
 
 </div>
 

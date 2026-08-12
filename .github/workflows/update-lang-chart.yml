@@ -1,8 +1,8 @@
-name: Update language chart
+name: Update README charts
 
 on:
   schedule:
-    - cron: "0 3 * * 1"
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate chart
+      - name: Generate language chart
         env:
           # LANG_STATS_TOKEN must be a fine-grained PAT with read access to
           # all repos; the default github.token only sees public repos and
@@ -27,9 +27,13 @@ jobs:
           fi
           python3 scripts/generate_lang_chart.py
 
+      # Reads the public contribution calendar, so no secret is required.
+      - name: Generate activity chart
+        run: python3 scripts/generate_activity_chart.py
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/top-langs.svg
-          git diff --cached --quiet || (git commit -m "chore: update language chart" && git push)
+          git add assets/top-langs.svg assets/activity.svg
+          git diff --cached --quiet || (git commit -m "chore: update readme charts" && git push)
