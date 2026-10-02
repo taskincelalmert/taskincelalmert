@@ -32,19 +32,20 @@ def header(theme):
     return parts, 168
 
 
-def projects(theme):
-    parts = [label(0, 14, "PROJECTS", theme)]
-    y = 50
-    for name, description, tech, private, site in PROJECTS:
-        parts.append(text(0, y, name, 16, theme["text"], "Medium"))
-        if private:
-            parts.append(label(0, y + 21, "PRIVATE", theme))
-        if site:
-            parts.append(text(WIDTH, y, site, 15, theme["accent"], anchor="end"))
-        parts.append(text(230, y, description, 15, theme["text"]))
-        parts.append(text(230, y + 22, tech, 13, theme["muted"]))
-        y += 58
-    return parts, y + 8
+def project(index, theme):
+    """One project per image so each row can carry its own link; the first holds the section label."""
+    name, description, tech, private, site = PROJECTS[index]
+    first, last = index == 0, index == len(PROJECTS) - 1
+    y = 50 if first else 16
+    parts = [label(0, 14, "PROJECTS", theme)] if first else []
+    parts.append(text(0, y, name, 16, theme["text"], "Medium"))
+    if private:
+        parts.append(label(0, y + 21, "PRIVATE", theme))
+    if site:
+        parts.append(text(WIDTH, y, site, 15, theme["accent"], anchor="end"))
+    parts.append(text(230, y, description, 15, theme["text"]))
+    parts.append(text(230, y + 22, tech, 13, theme["muted"]))
+    return parts, y + (60 if last else 36)
 
 
 def contact(theme):
@@ -57,6 +58,7 @@ def contact(theme):
 
 if __name__ == "__main__":
     write("header", f"{NAME}. {ROLE}. {SUMMARY}.", header)
-    write("projects", "Projects", projects)
+    for i, (name, *_) in enumerate(PROJECTS):
+        write(f"project-{i + 1}", name, lambda theme: project(i, theme))
     write("contact", "Contact", contact)
     print("wrote header, projects and contact graphics")

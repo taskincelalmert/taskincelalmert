@@ -19,10 +19,20 @@
 
 <br>
 
-<a href="https://github.com/taskincelalmert?tab=repositories">
+<a href="https://github.com/taskincelalmert/ChefSpecials">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/projects-dark.svg">
-    <img alt="Projects. ChefSpecials: mobile app for restaurant specials. DetaApartProject: full stack apartment management system (private). Axon-Jira: project management tool (private)." src="./assets/projects-light.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-1-dark.svg">
+    <img alt="Projects. ChefSpecials: mobile app for restaurant specials." src="./assets/project-1-light.svg" width="100%">
+  </picture>
+</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-2-dark.svg">
+  <img alt="DetaApartProject: full stack apartment management system (private)." src="./assets/project-2-light.svg" width="100%">
+</picture>
+<a href="https://axonjira.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-3-dark.svg">
+    <img alt="Axon-Jira: project management tool (private). axonjira.com" src="./assets/project-3-light.svg" width="100%">
   </picture>
 </a>
 
