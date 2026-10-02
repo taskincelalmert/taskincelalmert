@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-"""Generate assets/activity.svg from the public GitHub contribution calendar (no token required)."""
+# /// script
+# dependencies = ["fonttools"]
+# ///
+"""Generate assets/activity-{light,dark}.svg from the public GitHub contribution calendar (no token required)."""
 import datetime
 import html
 import json
-import os
 import re
 import sys
 import urllib.error
 import urllib.request
 
-USERNAME = "taskincelalmert"
-OUTPUT = os.path.join(os.path.dirname(__file__), "..", "assets", "activity.svg")
+from render import WIDTH, label, text, write
 
-BG, ACCENT, TEXT_COLOR, DATE_COLOR, LINE_COLOR = "#0d1117", "#A855F7", "#c9d1d9", "#6e7681", "#21262d"
+USERNAME = "taskincelalmert"
+
+HEIGHT, COL_W = 234, 280
+WEEKS, BARS_Y, BARS_H, BAR_GAP = 52, 136, 48, 4
 
 DAY_RE = re.compile(r'data-date="(\d{4}-\d{2}-\d{2})"[^>]*id="(contribution-day-component-[\d-]+)"')
 TOOLTIP_RE = re.compile(r'<tool-tip[^>]*for="(contribution-day-component-[\d-]+)"[^>]*>([^<]*)</tool-tip>')
@@ -84,51 +88,55 @@ def streaks(days):
 
 def fmt(date, with_year=True):
     parsed = datetime.date.fromisoformat(date)
-    return parsed.strftime("%b %-d, %Y") if with_year else parsed.strftime("%b %-d")
+    return f"{parsed:%b} {parsed.day}" + (f", {parsed.year}" if with_year else "")
 
 
 def span(start, end):
-    return fmt(start, False) if start == end else f"{fmt(start, False)} - {fmt(end, False)}"
+    return fmt(start, False) if start == end else f"{fmt(start, False)} to {fmt(end, False)}"
 
 
-def panel(cx, number, label, dates, ring=False):
-    parts = []
-    if ring:
-        parts.append(f'<circle cx="{cx}" cy="66" r="38" fill="none" stroke="{ACCENT}" stroke-width="4"/>')
-    parts += [
-        f'<text x="{cx}" y="78" text-anchor="middle" font-family="\'Segoe UI\', Ubuntu, Sans-Serif" '
-        f'font-size="34" font-weight="700" fill="{TEXT_COLOR}">{number}</text>',
-        f'<text x="{cx}" y="128" text-anchor="middle" font-family="\'Segoe UI\', Ubuntu, Sans-Serif" '
-        f'font-size="14" font-weight="600" fill="{ACCENT}">{label}</text>',
-        f'<text x="{cx}" y="150" text-anchor="middle" font-family="\'Segoe UI\', Ubuntu, Sans-Serif" '
-        f'font-size="12" fill="{DATE_COLOR}">{dates}</text>',
+def stat(col, number, caption, dates, theme):
+    x = col * COL_W
+    return [
+        text(x - 1, 64, str(number), 40, theme["text"], "Light", -0.4),
+        text(x, 88, caption, 15, theme["text"]),
+        text(x, 108, dates, 13, theme["muted"]),
     ]
-    return parts
 
 
-def main():
-    days = fetch_days()
+def render(days, theme):
     current, longest = streaks(days)
     total = sum(days.values())
     first_day = min(d for d, c in days.items() if c) if total else min(days)
 
-    width, height = 495, 180
-    parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
-        f'viewBox="0 0 {width} {height}" fill="none" role="img" aria-label="Contribution activity">',
-        f'<rect width="{width}" height="{height}" rx="4.5" fill="{BG}"/>',
-        f'<line x1="165" y1="26" x2="165" y2="154" stroke="{LINE_COLOR}" stroke-width="1"/>',
-        f'<line x1="330" y1="26" x2="330" y2="154" stroke="{LINE_COLOR}" stroke-width="1"/>',
-    ]
-    parts += panel(82.5, total, "Total Contributions", f"{fmt(first_day)} - Present")
-    parts += panel(247.5, current[0], "Current Streak", span(current[1], current[2]), ring=True)
-    parts += panel(412.5, longest[0], "Longest Streak", span(longest[1], longest[2]))
-    parts.append("</svg>")
+    parts = [label(0, 14, "ACTIVITY", theme)]
+    parts += stat(0, f"{total:,}", "Contributions", f"since {fmt(first_day)}", theme)
+    parts += stat(1, current[0], "Day current streak", span(current[1], current[2]), theme)
+    parts += stat(2, longest[0], "Day longest streak", span(longest[1], longest[2]), theme)
 
-    os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
-    with open(OUTPUT, "w") as f:
-        f.write("\n".join(parts) + "\n")
-    print(f"wrote {os.path.normpath(OUTPUT)}: {total} total, "
+    # One bar per week, oldest first; the running week takes the accent.
+    counts = [days[d] for d in sorted(days)][-WEEKS * 7:]
+    weeks = [sum(counts[i:i + 7]) for i in range(0, len(counts), 7)]
+    peak = max(weeks) or 1
+    bar_w = (WIDTH - BAR_GAP * (len(weeks) - 1)) / len(weeks)
+    for i, count in enumerate(weeks):
+        h = max(2, count / peak * BARS_H)
+        last = i == len(weeks) - 1
+        parts.append(
+            f'<rect x="{i * (bar_w + BAR_GAP):.1f}" y="{BARS_Y + BARS_H - h:.1f}" width="{bar_w:.1f}" '
+            f'height="{h:.1f}" rx="2" fill="{theme["accent"] if last else theme["text"]}" '
+            f'fill-opacity="{1 if last else 0.3}"/>'
+        )
+    parts.append(text(0, BARS_Y + BARS_H + 22, f"Contributions per week, last {len(weeks)} weeks",
+                      13, theme["muted"]))
+    return parts, HEIGHT
+
+
+def main():
+    days = fetch_days()
+    write("activity", "Contribution activity", lambda theme: render(days, theme))
+    current, longest = streaks(days)
+    print(f"wrote activity-light.svg, activity-dark.svg: {sum(days.values())} total, "
           f"{current[0]} day current streak, {longest[0]} day longest streak")
 
 

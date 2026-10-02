@@ -1,102 +1,36 @@
-<div align="center">
-
-<img src="assets/header.svg" width="100%" alt="Celal Mert Taşkın" />
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&repeat=true&width=500&height=24&lines=Software+Engineering+Student;Full+Stack+%7C+Mobile+%7C+Desktop;Java+%7C+C%23+%7C+Dart+%7C+TypeScript+%7C+Python;%C4%B0zmir+University+of+Economics" alt="Typing SVG" />
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/celal-mert-taskin/)
-[![GitHub](https://img.shields.io/badge/GitHub-taskincelalmert-181717?style=flat&logo=github&logoColor=white)](https://github.com/taskincelalmert)
-[![Profile Views](https://komarev.com/ghpvc/?username=taskincelalmert&color=A855F7&style=flat&label=Views)](https://github.com/taskincelalmert)
-
-</div>
-
----
-
-### About Me
-
-```yaml
-Name:     Celal Mert Taşkın
-Role:     Software Engineering Student
-School:   İzmir University of Economics
-Location: İzmir, Turkey
-Focus:    Full Stack · Mobile · Desktop · Web Applications
-```
-
----
-
-### Languages
-
-<div align="center">
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=java,cs,dart,python,cpp,typescript,javascript,html,css,swift,kotlin,ruby&theme=dark" alt="Languages" />
-</a>
-
-</div>
-
----
-
-### Frameworks & Platforms
-
-<div align="center">
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=flutter,react,dotnet,vite,docker&theme=dark" alt="Frameworks" />
-</a>
-
-</div>
-
----
-
-### Tools
-
-<div align="center">
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=idea,vscode,git,github&theme=dark" alt="Tools" />
-</a>
-
-</div>
-
----
-
-### Projects
-
-<div align="center">
-
-| Project | Description | Tech |
-|---------|-------------|------|
-| **Axon-Jira** | Project management tool | Next.js, Firebase, TypeScript |
-| **ChefSpecials** | Mobile app for restaurant specials | Flutter, Dart, Swift, Kotlin |
-| **DetaApartProject** | Full stack apartment management system | C#, .NET, TypeScript, Docker |
-
-</div>
-
----
-
-### Language Distribution
-
-<div align="center">
-
-<img src="assets/top-langs.svg" alt="Top Languages" />
-
-</div>
-
----
-
-### Activity
-
-<div align="center">
-
-<img src="assets/activity.svg" alt="Contribution Activity" />
-
-</div>
-
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
+  <img alt="Celal Mert Taşkın. Software engineer. Full stack, mobile and desktop systems with TypeScript, Flutter and .NET. izmir, tr. since 2023." src="./assets/header-light.svg" width="100%">
+</picture>
 
 <br>
 
-<div align="center">
-  <img src="assets/footer.svg" width="100%" alt="" />
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg">
+  <img alt="Languages, frameworks and tools I work with." src="./assets/stack-light.svg" width="100%">
+</picture>
 
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+  <img alt="Contribution activity: totals, streaks and contributions per week." src="./assets/activity-light.svg" width="100%">
+</picture>
+
+<br>
+
+<a href="https://github.com/taskincelalmert?tab=repositories">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/projects-dark.svg">
+    <img alt="Projects. ChefSpecials: mobile app for restaurant specials. DetaApartProject: full stack apartment management system (private). Axon-Jira: project management tool (private)." src="./assets/projects-light.svg" width="100%">
+  </picture>
+</a>
+
+<br>
+
+<a href="https://www.linkedin.com/in/celal-mert-taskin/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/contact-dark.svg">
+    <img alt="Contact: linkedin.com/in/celal-mert-taskin" src="./assets/contact-light.svg" width="100%">
+  </picture>
+</a>

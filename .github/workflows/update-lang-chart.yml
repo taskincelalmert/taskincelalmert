@@ -14,6 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # The scripts declare fonttools inline; uv installs it on the fly.
+      - uses: astral-sh/setup-uv@v6
+
       - name: Generate language chart
         env:
           # LANG_STATS_TOKEN must be a fine-grained PAT with read access to
@@ -25,15 +28,15 @@ jobs:
             echo "LANG_STATS_TOKEN secret not set; skipping to keep private-repo stats"
             exit 0
           fi
-          python3 scripts/generate_lang_chart.py
+          uv run scripts/generate_lang_chart.py
 
       # Reads the public contribution calendar, so no secret is required.
       - name: Generate activity chart
-        run: python3 scripts/generate_activity_chart.py
+        run: uv run scripts/generate_activity_chart.py
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/top-langs.svg assets/activity.svg
+          git add assets/stack-light.svg assets/stack-dark.svg assets/activity-light.svg assets/activity-dark.svg
           git diff --cached --quiet || (git commit -m "chore: update readme charts" && git push)
